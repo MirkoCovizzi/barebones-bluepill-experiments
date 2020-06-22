@@ -17,9 +17,6 @@ void enable_pwm(void) {
     TIM3->ARR = 65535;
     TIM3->PSC = 16;
     TIM3->CCR4 = 32;
-    TIM3->CCMR2 &= ~(TIM3_CC4S_1 | TIM3_CC4S_0);
-
-    TIM3->EGR |= 1;
 
     // PWM Mode 1
     TIM3->CCMR2 |= (1 << 14 | 1 << 13);
