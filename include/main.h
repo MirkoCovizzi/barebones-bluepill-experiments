@@ -75,22 +75,12 @@ typedef struct
 #define RCC ((RCC_TypeDef *) 0x40021000)
 
 #define GPIOB ((GPIO_TypeDef *) 0x40010C00)
-#define GPIOC ((GPIO_TypeDef *) 0x40011000)
 
 #define TIM3EN ((uint32_t) 1 << 1)
 #define IOPBEN ((uint32_t) 1 << 3)
-#define IOPCEN ((uint32_t) 0x00000010)
-
-#define ODR13 ((uint32_t) 0x00002000)
 
 #define GPIO_CRL_MODE1 ((uint32_t) 1 << 5 | 1 << 4)
 #define GPIO_CRL_CNF1_0 ((uint32_t) 1 << 6)
 #define GPIO_CRL_CNF1_1 ((uint32_t) 1 << 7)
 
-#define  GPIO_CRH_MODE13_0 ((uint32_t) 0x00100000)
-
-#define  GPIO_CRH_CNF13 ((uint32_t) 0x00C00000)
-
 #define TIM3 ((TIM_TypeDef *) 0x40000400)
-#define TIM3_CC4S_0 ((uint16_t) 1 << 8)
-#define TIM3_CC4S_1 ((uint16_t) 1 << 9)
